@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yueZWVczOSM=",
+  "dgSpecHash": "8fp7Idc8FrE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\projet-Real-Estate.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\net\\projet1\\projet_Real-Estate\\projet-Real-Estate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yasmine\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\yasmine\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\yasmine\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\yasmine\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.20\\microsoft.netcore.app.host.win-x64.8.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
