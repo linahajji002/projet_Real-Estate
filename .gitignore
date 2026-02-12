@@ -429,3 +429,6 @@ Properties/launchSettings.json
 
 # wwwroot/lib - if using LibMan or npm for client-side libraries
 wwwroot/lib/
+
+bin/
+obj/
