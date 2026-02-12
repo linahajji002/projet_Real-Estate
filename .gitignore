@@ -37,7 +37,7 @@ bld/
 Generated\ Files/
 
 # Ignore EF Core migrations
-Data/migrations/
+# Data/migrations/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

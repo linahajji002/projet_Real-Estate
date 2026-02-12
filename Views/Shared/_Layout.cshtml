@@ -71,12 +71,19 @@
                     <partial name="_LoginPartial" />
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2026 - projet_Real_Estate - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <partial name="_LoginPartial" />
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
