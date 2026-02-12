@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\projet-Real-Estate.csproj": {}
+    "C:\\Users\\Sara\\Desktop\\projet_Real-Estate\\projet-Real-Estate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\projet-Real-Estate.csproj": {
+    "C:\\Users\\Sara\\Desktop\\projet_Real-Estate\\projet-Real-Estate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\projet-Real-Estate.csproj",
+        "projectUniqueName": "C:\\Users\\Sara\\Desktop\\projet_Real-Estate\\projet-Real-Estate.csproj",
         "projectName": "projet-Real-Estate",
-        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\projet-Real-Estate.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\projet-Real-Estate\\projet-Real-Estate\\obj\\",
+        "projectPath": "C:\\Users\\Sara\\Desktop\\projet_Real-Estate\\projet-Real-Estate.csproj",
+        "packagesPath": "C:\\Users\\Sara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sara\\Desktop\\projet_Real-Estate\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Sara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +46,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\ASUS\\.dotnet\\sdk\\8.0.418/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.418/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
