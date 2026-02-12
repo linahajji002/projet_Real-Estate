@@ -8,10 +8,54 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Areas\Identity\Controllers\" />
-      <Folder Include="Areas\Identity\Views\" />
-      <Folder Include="Data\migrations\" />
-      <Folder Include="ViewsComponents\" />
+        <!-- Entity Framework Core Packages -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
+        <!-- ASP.NET Core Identity Packages -->
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+
+        <!-- Additional useful packages -->
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.0" />
+        
+        <!-- Optional: For model validation and annotations -->
+        <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+        
+        <!-- SUPPRIMEZ OU METTEZ À JOUR System.Text.Json à cause de la vulnérabilité -->
+        <PackageReference Include="System.Text.Json" Version="8.0.5" />
+        
+        <!-- Optional: For migrations in other projects -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+    </ItemGroup>
+
+    <!-- SUPPRIMEZ OU COMMENTEZ CETTE LIGNE -->
+    <!-- <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup> -->
+
+    <ItemGroup>
+        <Folder Include="Areas\Identity\Controllers\" />
+        <Folder Include="Areas\Identity\Views\" />
+        <Folder Include="Data\Migrations\" />
+        <Folder Include="ViewsComponents\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.23" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.23" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.23" />
     </ItemGroup>
 
     <ItemGroup>

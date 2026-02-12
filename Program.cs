@@ -31,19 +31,20 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// Initialisation des rôles et utilisateur admin
+// Initialisation des rôles et utilisateur admin - VERSION CORRIGÉE
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<ApplicationDbContext>();
-        context.Database.EnsureCreated(); // Crée la base si elle n'existe pas
+        context.Database.EnsureCreated();
 
         var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
-        await SeedData.Initialize(userManager, roleManager);
+        // SOLUTION: Appeler une méthode synchrone au lieu d'await
+        Task.Run(async () => await SeedData.Initialize(userManager, roleManager)).GetAwaiter().GetResult();
     }
     catch (Exception ex)
     {
@@ -51,6 +52,9 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "Une erreur est survenue lors de l'initialisation de la base de données.");
     }
 }
+
+// OU MIEUX: Déplacer le seed dans une méthode séparée
+// await InitializeDatabaseAsync(app.Services);
 
 if (app.Environment.IsDevelopment())
 {
