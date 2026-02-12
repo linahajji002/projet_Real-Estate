@@ -7,4 +7,11 @@
         <RootNamespace>projet_Real_Estate</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Areas\Identity\Controllers\" />
+      <Folder Include="Areas\Identity\Views\" />
+      <Folder Include="Data\migrations\" />
+      <Folder Include="ViewsComponents\" />
+    </ItemGroup>
+
 </Project>
