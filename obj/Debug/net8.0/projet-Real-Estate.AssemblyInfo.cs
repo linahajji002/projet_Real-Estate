@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("projet-Real-Estate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71641bec1f0d3c6e09f8a584e0d8a2bb57be9278")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96076fe1dfc203262c067b7422c32a3dba70bef8")]
 [assembly: System.Reflection.AssemblyProductAttribute("projet-Real-Estate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("projet-Real-Estate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
