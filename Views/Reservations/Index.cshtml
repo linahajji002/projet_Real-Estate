@@ -209,7 +209,19 @@
                                                 <small>@reservation.AdminRemark</small>
                                             }
                                         </td>
-                                        <td></td>
+                                        <td>
+                                            @if (reservation.Status == "En attente")
+                                            {
+                                                <button type="button" class="btn btn-sm btn-success me-1" 
+                                                        data-bs-toggle="modal" data-bs-target="#acceptModal@(reservation.Id)">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-danger" 
+                                                        data-bs-toggle="modal" data-bs-target="#refuseModal@(reservation.Id)">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            }
+                                        </td>
                                     </tr>
                                 }
                             }
@@ -284,7 +296,19 @@
                                                 <small>@reservation.AdminRemark</small>
                                             }
                                         </td>
-                                        <td></td>
+                                        <td>
+                                            @if (reservation.Status == "En attente")
+                                            {
+                                                <button type="button" class="btn btn-sm btn-success me-1" 
+                                                        data-bs-toggle="modal" data-bs-target="#acceptModal@(reservation.Id)">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-danger" 
+                                                        data-bs-toggle="modal" data-bs-target="#refuseModal@(reservation.Id)">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            }
+                                        </td>
                                     </tr>
                                 }
                             }
@@ -359,7 +383,19 @@
                                                 <small>@reservation.AdminRemark</small>
                                             }
                                         </td>
-                                        <td></td>
+                                        <td>
+                                            @if (reservation.Status == "En attente")
+                                            {
+                                                <button type="button" class="btn btn-sm btn-success me-1" 
+                                                        data-bs-toggle="modal" data-bs-target="#acceptModal@(reservation.Id)">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-danger" 
+                                                        data-bs-toggle="modal" data-bs-target="#refuseModal@(reservation.Id)">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            }
+                                        </td>
                                     </tr>
                                 }
                             }
